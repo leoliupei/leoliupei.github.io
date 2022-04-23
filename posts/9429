@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.1.0">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"liupei.me","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.11.0","exturl":true,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":"flat","bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="这篇文章会解答你的如下疑惑：  什么是区块链钱包 什么是冷钱包 什么是热钱包 怎样生成一个冷钱包 怎样用热钱包监控冷钱包余额 怎样用冷热钱包进行交易  什么是区块链钱包区块链（数字）钱包是一种管理数字货币的工具，其中包含了私钥、公钥、钱包地址、助记词、密码、Keystore等等概念，生成一个数字钱包就会包含这整套数据，这些数据之间是紧密关联且一一对应的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="区块链（数字）钱包揭秘">
+<meta property="og:url" content="https://liupei.me/posts/9429">
+<meta property="og:site_name" content="Pei&#39;s Home">
+<meta property="og:description" content="这篇文章会解答你的如下疑惑：  什么是区块链钱包 什么是冷钱包 什么是热钱包 怎样生成一个冷钱包 怎样用热钱包监控冷钱包余额 怎样用冷热钱包进行交易  什么是区块链钱包区块链（数字）钱包是一种管理数字货币的工具，其中包含了私钥、公钥、钱包地址、助记词、密码、Keystore等等概念，生成一个数字钱包就会包含这整套数据，这些数据之间是紧密关联且一一对应的。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-19T12:50:26.000Z">
+<meta property="article:modified_time" content="2022-04-23T12:35:03.515Z">
+<meta property="article:author" content="刘沛">
+<meta property="article:tag" content="liupei, 刘沛, 区块链, 技术, 前端">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://liupei.me/posts/9429">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://liupei.me/posts/9429","path":"posts/9429","title":"区块链（数字）钱包揭秘"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>区块链（数字）钱包揭秘 | Pei's Home</title>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?41fc030db57d5570dd22c78997fe4b7a"></script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Pei's Home</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">刘沛的个人主页</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8C%BA%E5%9D%97%E9%93%BE%E9%92%B1%E5%8C%85"><span class="nav-number">1.</span> <span class="nav-text">什么是区块链钱包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%81%E9%92%A5%E5%92%8C%E5%85%AC%E9%92%A5"><span class="nav-number">1.1.</span> <span class="nav-text">私钥和公钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%92%B1%E5%8C%85%E5%9C%B0%E5%9D%80"><span class="nav-number">1.2.</span> <span class="nav-text">钱包地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A9%E8%AE%B0%E8%AF%8D"><span class="nav-number">1.3.</span> <span class="nav-text">助记词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%92%8CKeystore"><span class="nav-number">1.4.</span> <span class="nav-text">密码和Keystore</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">1.5.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%B7%E9%92%B1%E5%8C%85"><span class="nav-number">2.</span> <span class="nav-text">什么是冷钱包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%B7%E9%92%B1%E5%8C%85%E7%9A%84%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90"><span class="nav-number">2.1.</span> <span class="nav-text">冷钱包的可行性分析</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="刘沛"
+      src="/images/avatars/avatar.jpg">
+  <p class="site-author-name" itemprop="name">刘沛</p>
+  <div class="site-description" itemprop="description">世界，即非世界，是名世界...</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xlb2xpdXBlaQ==" title="leoliupei → https:&#x2F;&#x2F;github.com&#x2F;leoliupei"><i class="fab fa-github fa-fw"></i>leoliupei</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9pbnN0YWdyYW0uY29tL2xpdXBlaWlpaWlp" title="liupeiiiiii → https:&#x2F;&#x2F;instagram.com&#x2F;liupeiiiiii"><i class="fab fa-instagram fa-fw"></i>liupeiiiiii</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9iMjMudHYvOFhEbWhGRA==" title="扑瑞沛同学 → https:&#x2F;&#x2F;b23.tv&#x2F;8XDmhFD"><i class="fab fa-bilibili fa-fw"></i>扑瑞沛同学</span>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://liupei.me/posts/9429">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatars/avatar.jpg">
+      <meta itemprop="name" content="刘沛">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pei's Home">
+      <meta itemprop="description" content="世界，即非世界，是名世界...">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="区块链（数字）钱包揭秘 | Pei's Home">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          区块链（数字）钱包揭秘
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-04-19 20:50:26" itemprop="dateCreated datePublished" datetime="2022-04-19T20:50:26+08:00">2022-04-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-04-23 20:35:03" itemprop="dateModified" datetime="2022-04-23T20:35:03+08:00">2022-04-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/" itemprop="url" rel="index"><span itemprop="name">区块链</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>这篇文章会解答你的如下疑惑：</p>
+<ol>
+<li>什么是区块链钱包</li>
+<li>什么是冷钱包</li>
+<li>什么是热钱包</li>
+<li>怎样生成一个冷钱包</li>
+<li>怎样用热钱包监控冷钱包余额</li>
+<li>怎样用冷热钱包进行交易</li>
+</ol>
+<h2 id="什么是区块链钱包"><a href="#什么是区块链钱包" class="headerlink" title="什么是区块链钱包"></a>什么是区块链钱包</h2><p>区块链（数字）钱包是一种管理数字货币的工具，其中包含了<code>私钥</code>、<code>公钥</code>、<code>钱包地址</code>、<code>助记词</code>、<code>密码</code>、<code>Keystore</code>等等概念，生成一个数字钱包就会包含这整套数据，这些数据之间是紧密关联且一一对应的。</p>
+<span id="more"></span>
+<h3 id="私钥和公钥"><a href="#私钥和公钥" class="headerlink" title="私钥和公钥"></a>私钥和公钥</h3><p><strong>私钥是区块链钱包中最重要的数据，生成了私钥就生成了整个钱包。</strong></p>
+<p>上一段文字中提到的所有数据都是通过私钥来生成的，所以拥有一个数字钱包的本质就是拥有私钥。掌握私钥的人才是数字货币的持有者，在去中心化的框架下私钥一旦丢失永远无法找回，里面的资产也随之消失在“<span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvJUU0JUJCJUE1JUU1JUE0JUFB">以太</span>”中。</p>
+<p>私钥和公钥是一个密钥对，这两个数据是成对存在的，公钥是由私钥经算法得到的，并且这个操作不可逆。</p>
+<p>类比<span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvJUU1JTg1JUFDJUU1JUJDJTgwJUU1JUFGJTg2JUU5JTkyJUE1JUU1JThBJUEwJUU1JUFGJTg2">非对称加密</span>（或者叫<code>公开密钥加密</code>）的原理，在区块链中公钥一般用来解密数据以验证数字签名，私钥一般是本方用来加密（签名）数据；公钥是可以公开的，私钥是需要绝对保密的。</p>
+<p>在区块链钱包中私钥主要有两个用途：</p>
+<ol>
+<li>通过私钥计算得出钱包其他所有部分数据，比如钱包地址等等</li>
+<li>给他人转账时要对交易区块进行签名，用私钥签名了的区块，任何人可以用对应的公钥去验证这个签名是否是你的</li>
+</ol>
+<h3 id="钱包地址"><a href="#钱包地址" class="headerlink" title="钱包地址"></a>钱包地址</h3><p>钱包地址相当于你的银行卡号，是公开用来收钱和转账用的。每个数字钱包管理一种货币，每种数字货币由于其钱包的生成算法不同，其钱包地址的开头不尽相同，比如：</p>
+<ul>
+<li>1开头的地址，是BTC的传统地址或者叫原始地址。其中包含了创世地址，比如<code>1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</code>就属于中本聪本人。</li>
+<li>3开头的地址，是BTC用P2SH脚本生成钱包的地址，目前普遍使用的BTC钱包。</li>
+<li>0x开头的地址，是ETH的钱包地址。</li>
+<li>cosmos开头的地址，是ATOM的钱包地址。</li>
+</ul>
+<p>钱包地址由公钥通过哈希计算得出。</p>
+<h3 id="助记词"><a href="#助记词" class="headerlink" title="助记词"></a>助记词</h3><p>由于私钥过于重要，对私钥的保存是一个非常复杂的过程。</p>
+<p>大家公认最重要的一点就是你的私钥不能存储在任何电子设备上，最好记在纸上，甚至大脑里。但是，由于私钥是哈希算法生成的64位字符串，没有任何规律和意义极其难以记忆，甚至第一次抄到纸上都会有很多人抄错，便有了助记词的出现。</p>
+<p>助记词是根据<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2JpdGNvaW4vYmlwcy9ibG9iL21hc3Rlci9iaXAtMDAzOS5tZWRpYXdpa2k=">映射算法</span>，从<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2JpdGNvaW4vYmlwcy9ibG9iL21hc3Rlci9iaXAtMDAzOS9lbmdsaXNoLnR4dA==">助记词词库</span>中的2048个词语中挑出12个词语代替私钥用来辅助记忆。由于这些都是熟悉常用的词语，写错的概率会大大降低而且有了背诵的可能。</p>
+<p>助记词和私钥可以互相转换，也并不会影响私钥的安全性，因为这种助记词的组合有${2048}^{12}\approx5.44\times10^{39}$种。</p>
+<h3 id="密码和Keystore"><a href="#密码和Keystore" class="headerlink" title="密码和Keystore"></a>密码和Keystore</h3><p>常见于ETH钱包中，Keystore文件是由用户设定的密码对私钥加密后得到，所以Keystore加密码就等于私钥。</p>
+<p>数字钱包软件在生成私钥后展示给用户，不会存储私钥。原因上面已经提到了，私钥存储在电子设备上是极其危险的。但是在进行转账交易的时候要用到私钥，所以有些区块链钱包会存储一份经密码加密后的私钥在设备中，存储的这个文件就是Keystore。</p>
+<p>这个密码是用户设置的，在进行转账交易的时候，可以不用输入私钥或者助记词。只需要输入密码，软件会将存储的Keystore进行解密获得私钥用来完成交易。</p>
+<p>这样做既有好处也有坏处。</p>
+<p>好处是用户无需输入私钥或者助记词而是用密码代替，在电子设备环境中，任何输入操作都可能成为监听的目标，况且直接输入的私钥和助记词是没有任何保护的，只要被监听盗取且无法修改，你将永远失去你的财产。</p>
+<p>坏处是Keystore和密码以及加密算法都在钱包软件中，如果钱包软件有问题，就可以把我的私钥拿到并收集走。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><pre class="mermaid">flowchart LR;
+A[私钥]
+A--椭圆曲线相乘-->B[公钥]
+A<--映射-->D[助记词]
+A<--解密/加密-->E[Keystore]
+B--哈希-->C[地址]</pre>
+
+<h2 id="什么是冷钱包"><a href="#什么是冷钱包" class="headerlink" title="什么是冷钱包"></a>什么是冷钱包</h2><p>冷钱包就是将数字货币进行离线储存的钱包。不联网的数字钱包，这里的不联网包含从生成该钱包到以后的任何时间都不联网。</p>
+<p>优点是冷钱包面临网络黑客攻击的安全性非常高，从物理上切断了网络黑客攻击的可能性。还记得上面提到Keystore的问题吗？冷钱包就能完美解决这个问题。</p>
+<p>缺点是冷钱包存在物理安全隐患，比如硬件的丢失和损坏等等。</p>
+<h3 id="冷钱包的可行性分析"><a href="#冷钱包的可行性分析" class="headerlink" title="冷钱包的可行性分析"></a>冷钱包的可行性分析</h3><p>为什么任何数字钱包都可以用冷钱包，为什么冷钱包不用联网就能使用？</p>
+<p>要想解答这个问题需要涉及一点区块链的技术原理，</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/donates/wechat.JPG" alt="刘沛 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/donates/alipay.JPG" alt="刘沛 支付宝">
+        <span>支付宝</span>
+      </div>
+      <div>
+        <img src="/images/donates/eth.jpg" alt="刘沛 ETH">
+        <span>ETH</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>刘沛
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://liupei.me/posts/9429" title="区块链（数字）钱包揭秘">https://liupei.me/posts/9429</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+        
+
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"><b>liupei.me</b> All Rights Reserved</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js","integrity":"sha256-7wT34TI0pEBeEFoi4z+vhuSddGh6vUTMWdqJ2SDe2jg="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
