@@ -2,25 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://liupei.me/posts/11758</loc>
-    
-    <lastmod>2022-04-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://liupei.me/posts/38875</loc>
-    
-    <lastmod>2022-04-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://liupei.me/posts/9429</loc>
+    <loc>https://liupei.me/posts/37219</loc>
     
     <lastmod>2022-04-23</lastmod>
     
@@ -47,7 +29,34 @@
   </url>
   
   <url>
-    <loc>https://liupei.me/posts/37219</loc>
+    <loc>https://liupei.me/posts/9429</loc>
+    
+    <lastmod>2022-04-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://liupei.me/posts/11758</loc>
+    
+    <lastmod>2022-04-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://liupei.me/posts/38875</loc>
+    
+    <lastmod>2022-04-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://liupei.me/404.html</loc>
     
     <lastmod>2022-04-23</lastmod>
     
@@ -58,7 +67,7 @@
   <url>
     <loc>https://liupei.me/about/index.html</loc>
     
-    <lastmod>2022-04-22</lastmod>
+    <lastmod>2022-04-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,16 +76,7 @@
   <url>
     <loc>https://liupei.me/categories/index.html</loc>
     
-    <lastmod>2022-04-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://liupei.me/404.html</loc>
-    
-    <lastmod>2022-04-22</lastmod>
+    <lastmod>2022-04-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
