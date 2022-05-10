@@ -4,7 +4,7 @@
   <url>
     <loc>https://liupei.me/tags/index.html</loc>
     
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,7 @@
   <url>
     <loc>https://liupei.me/posts/9429.html</loc>
     
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +22,7 @@
   <url>
     <loc>https://liupei.me/posts/16366.html</loc>
     
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,7 +31,7 @@
   <url>
     <loc>https://liupei.me/posts/37219.html</loc>
     
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,7 +40,7 @@
   <url>
     <loc>https://liupei.me/posts/38875.html</loc>
     
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +49,7 @@
   <url>
     <loc>https://liupei.me/posts/53246.html</loc>
     
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +58,7 @@
   <url>
     <loc>https://liupei.me/posts/2967.html</loc>
     
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,16 +67,7 @@
   <url>
     <loc>https://liupei.me/posts/11758.html</loc>
     
-    <lastmod>2022-05-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://liupei.me/404.html</loc>
-    
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,7 +76,16 @@
   <url>
     <loc>https://liupei.me/about/index.html</loc>
     
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://liupei.me/404.html</loc>
+    
+    <lastmod>2022-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -94,7 +94,7 @@
   <url>
     <loc>https://liupei.me/categories/index.html</loc>
     
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -103,7 +103,7 @@
 
   <url>
     <loc>https://liupei.me/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -111,112 +111,112 @@
   
   <url>
     <loc>https://liupei.me/tags/Apple/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E8%8B%B9%E6%9E%9C/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E8%B4%AD%E4%B9%B0/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E6%95%99%E8%82%B2%E4%BC%98%E6%83%A0/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/Hexo/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/GitHub/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/NexT/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E6%95%B0%E5%AD%97%E9%92%B1%E5%8C%85/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E9%AA%91%E8%A1%8C/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E8%AE%AD%E7%BB%83/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/Garmin/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/tags/%E9%AA%91%E8%A1%8C%E8%A3%85%E5%A4%87/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -225,28 +225,28 @@
   
   <url>
     <loc>https://liupei.me/categories/Apple-Store/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/categories/Hexo/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://liupei.me/categories/%E9%AA%91%E8%A1%8C/</loc>
-    <lastmod>2022-05-09</lastmod>
+    <lastmod>2022-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
