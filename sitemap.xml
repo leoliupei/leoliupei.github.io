@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://liupei.me/posts/38875.html</loc>
+    
+    <lastmod>2022-05-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://liupei.me/posts/11758.html</loc>
+    
+    <lastmod>2022-05-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://liupei.me/about/index.html</loc>
+    
+    <lastmod>2022-05-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://liupei.me/categories/index.html</loc>
+    
+    <lastmod>2022-05-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://liupei.me/tags/index.html</loc>
     
     <lastmod>2022-05-30</lastmod>
@@ -38,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://liupei.me/posts/38875.html</loc>
-    
-    <lastmod>2022-05-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://liupei.me/posts/53246.html</loc>
     
     <lastmod>2022-05-30</lastmod>
@@ -65,34 +92,7 @@
   </url>
   
   <url>
-    <loc>https://liupei.me/posts/11758.html</loc>
-    
-    <lastmod>2022-05-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://liupei.me/404.html</loc>
-    
-    <lastmod>2022-05-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://liupei.me/about/index.html</loc>
-    
-    <lastmod>2022-05-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://liupei.me/categories/index.html</loc>
     
     <lastmod>2022-05-30</lastmod>
     
